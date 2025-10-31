@@ -1,4 +1,6 @@
-﻿Date,Forecasted_Price
-2023-12-01,110.00
-2024-01-01,112.50
-2024-02-01,115.00
+
+#  Save Forecast Results
+
+forecast_results = forecast_df[['Date', 'Forecast']]
+forecast_results.to_csv('forecast_results.csv', index=False)
+print("forecast_results.csv file created successfully!")
