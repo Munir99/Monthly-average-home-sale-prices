@@ -1,4 +1,5 @@
-﻿Date,Price
-2023-01-01,100.50
-2023-02-01,105.20
-2023-03-01,102.80
+# Save Monthly Average Prices
+
+monthly_avg_prices = monthly_df[['Sold Date', 'Average Price']]
+monthly_avg_prices.to_csv('monthly_avg_prices.csv', index=False)
+print("monthly_avg_prices.csv file created successfully!")
